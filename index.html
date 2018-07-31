@@ -118,7 +118,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"right","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -511,7 +511,7 @@
           
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/24/我的第一篇博客/#more" rel="contents">
+            <a class="btn" href="/2018/07/24/我的第一篇博客/" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -712,7 +712,7 @@
           
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/26/手绘网站/#more" rel="contents">
+            <a class="btn" href="/2018/07/26/手绘网站/" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -912,7 +912,7 @@
           
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/26/tubiao/#more" rel="contents">
+            <a class="btn" href="/2018/07/26/tubiao/" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1113,7 +1113,7 @@
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/25/vim命令大全/#more" rel="contents">
+            <a class="btn" href="/2018/07/25/vim命令大全/" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1315,7 +1315,7 @@
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/25/hello-world/#more" rel="contents">
+            <a class="btn" href="/2018/07/25/hello-world/" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1383,6 +1383,8 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -1801,6 +1803,8 @@ show_date_time();
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
