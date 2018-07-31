@@ -2102,7 +2102,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff398f;
+  background: #20241b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3427,7 +3427,7 @@ pre {
 }
 .links-of-author {
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 20px;
 }
 .links-of-blogroll-title {
   margin-bottom: 10px;
@@ -3438,8 +3438,9 @@ pre {
   font-weight: bold;
 }
 .sidebar a {
-  color: #ff69b4;
+  color: #dc143c;
   border-bottom: none;
+  font-size: 16px;
 }
 .sidebar a:hover {
   color: #ee82ee;
@@ -3447,7 +3448,7 @@ pre {
 #days {
   display: block;
   color: #00bfff;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 15px;
 }
 .post-toc ol a {
@@ -3507,6 +3508,14 @@ pre {
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #f79533;
+}
+.footer {
+  line-height: 1.5;
+  background-color: rgba(255,255,255,0.75);
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #a166ab;
+  box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.15);
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
