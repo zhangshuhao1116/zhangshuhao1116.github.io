@@ -2101,7 +2101,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3265ff;
+  background: #63ecde;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3249,6 +3249,20 @@ pre {
 }
 .with-love {
   color: #ff71a8;
+}
+.bg_content {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  background: transparent;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
