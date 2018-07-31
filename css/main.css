@@ -2102,7 +2102,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b4ffd4;
+  background: #d54500;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3210,12 +3210,6 @@ hr {
     text-align: center;
   }
 }
-#days {
-  display: block;
-  color: #07b39b;
-  font-size: 18px;
-  margin-top: 5px;
-}
 .post {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -3346,7 +3340,7 @@ pre {
 .sidebar-nav li {
   font-size: 15px;
   font-weight: bold;
-  color: #07b39b;
+  color: #9932cc;
 }
 .sidebar-nav li:hover {
   color: #a166ab;
@@ -3376,6 +3370,46 @@ pre {
     margin: -73px 15px 50px 15px;
     padding: 86px 5px 36px 5px;
   }
+}
+.links-of-author {
+  margin-top: 15px;
+}
+.links-of-blogroll-title {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: rgba(7,179,155,0.75);
+  margin-left: 6px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.sidebar a {
+  color: #ff69b4;
+  border-bottom: none;
+}
+.sidebar a:hover {
+  color: #ee82ee;
+}
+#days {
+  display: block;
+  color: #00bfff;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.post-toc ol a {
+  color: #07b39b;
+  border-bottom: 1px solid #607d8b;
+}
+.post-toc ol a:hover {
+  color: #a166ab;
+  border-bottom-color: #a166ab;
+}
+.post-toc .nav .active > a {
+  color: #a166ab;
+  border-bottom-color: #a166ab;
+}
+.post-toc .nav .active > a:hover {
+  color: #a166ab;
+  border-bottom-color: #a166ab;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
