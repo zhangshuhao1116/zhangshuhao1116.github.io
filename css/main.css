@@ -2098,7 +2098,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #39a600;
+  background: #5cc98a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3589,6 +3589,7 @@ img.img-topic {
   box-sizing: border-box;
   margin: 20px auto;
   width: 780px;
+  text-align: center;
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
@@ -3601,9 +3602,6 @@ img.img-topic {
 }
 .footer img {
   border: none;
-}
-.footer {
-  box-shadow: 0 -5px 10px 0 rgba(0,0,0,0.5);
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
