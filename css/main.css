@@ -2098,7 +2098,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff59ff;
+  background: #4e4aff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3577,6 +3577,33 @@ img.img-topic {
   border-top-color: #a166ab;
   box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.15);
   text-align: center;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 50px;
+}
+.footer-inner {
+  box-sizing: border-box;
+  margin: 20px auto;
+  width: 780px;
+}
+@media (min-width: 1600px) {
+  .container .footer-inner {
+    width: 980px;
+  }
+}
+.footer {
+  font-size: 14px;
+  color: #999;
+}
+.footer img {
+  border: none;
+}
+.footer {
+  box-shadow: 0 -5px 10px 0 rgba(0,0,0,0.5);
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
