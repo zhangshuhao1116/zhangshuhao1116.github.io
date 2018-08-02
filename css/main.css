@@ -2098,7 +2098,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #58ffcf;
+  background: #7714ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3376,7 +3376,7 @@ pre {
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
 }
 .page-post-detail .sidebar-toggle-line {
-  background: #07b39b;
+  background: #9932cc;
 }
 .back-to-top {
   line-height: 1.5;
