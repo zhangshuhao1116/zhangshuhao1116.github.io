@@ -2098,7 +2098,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #dd4dff;
+  background: #93a2d5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3514,11 +3514,11 @@ pre {
 }
 .weixin-menu {
   position: relative;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   cursor: pointer;
   background: url("http://pcri4kvru.bkt.clouddn.com/qq-logo.gif");
-  background-size: 80px 80px;
+  background-size: 100px 100px;
 }
 .weixin-hover {
   position: absolute;
@@ -3531,26 +3531,27 @@ pre {
   background: url("http://pcri4kvru.bkt.clouddn.com/qq.jpeg");
   background-color: #fff;
   background-repeat: no-repeat;
-  background-size: 168px 158px;
+  background-size: 188px 168px;
   transition: all 0.35s ease-in-out;
   z-index: 1024;
   opacity: 0;
 }
 .weixin-menu:hover .weixin-hover {
-  bottom: 10px;
+  bottom: 85px;
   left: 0px;
   height: 188px;
-  width: 158px;
+  width: 168px;
   opacity: 1;
 }
 .weixin-description {
   opacity: 0;
   position: absolute;
-  bottom: 3%;
-  left: 5%;
-  right: 5%;
-  font-size: 12px;
+  bottom: 2%;
+  left: 3%;
+  right: 3%;
+  font-size: 13px;
   transition: all 0.35s cubic-bezier(1, 0, 0, 1);
+  color: #f00;
 }
 .weixin-menu:hover .weixin-description {
   opacity: 1;
