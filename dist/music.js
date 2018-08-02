@@ -4,9 +4,9 @@ const ap = new APlayer({
     autoplay: true,
     audio: [
       {
-        name: "樱花樱花想见你",
-        artist: '南杉',
-        url: 'http://www.ytmp3.cn/down/42249.mp3',
+        name: "白金ディスコ",
+        artist: '神前暁',
+        url: 'http://www.ytmp3.cn/down/50139.mp3',
         cover: 'https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=5913f1556009c93d13ff06a5fe5493b9/03087bf40ad162d962d7d94716dfa9ec8a13cdb4.jpg',
       },
        {
