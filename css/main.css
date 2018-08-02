@@ -2098,7 +2098,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a644f1;
+  background: #58ffcf;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3371,8 +3371,8 @@ pre {
 .sidebar-toggle {
   right: 10px;
   bottom: 43px;
-  background-color: rgba(247,149,51,0.75);
-  border-radius: 5px;
+  background-color: rgba(153,50,204,0.75);
+  border-radius: 8px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
 }
 .page-post-detail .sidebar-toggle-line {
@@ -3385,8 +3385,8 @@ pre {
   padding-left: 5px;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
-  background-color: rgba(247,149,51,0.75);
-  border-radius: 5px;
+  background-color: rgba(186,85,211,0.75);
+  border-radius: 8px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
 }
 .back-to-top.back-to-top-on {
