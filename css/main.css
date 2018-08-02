@@ -745,8 +745,9 @@ pre .javascript .function {
   position: relative;
   padding: 15px;
   margin-bottom: 20px;
-  border: 1px solid #eee;
-  border-left-width: 5px;
+  border: initial;
+  border-left: 3px solid #eee;
+  background-color: #f9f9f9;
   border-radius: 3px;
 }
 .post-body .note h2,
@@ -754,7 +755,7 @@ pre .javascript .function {
 .post-body .note h4,
 .post-body .note h5,
 .post-body .note h6 {
-  margin-top: 0;
+  margin-top: 3px;
   margin-bottom: 0;
   border-bottom: initial;
   padding-top: 0 !important;
@@ -775,7 +776,18 @@ pre .javascript .function {
 .post-body .note blockquote:last-child {
   margin-bottom: 0;
 }
+.post-body .note:not(.no-icon) {
+  padding-left: 45px;
+}
+.post-body .note:not(.no-icon):before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  font-size: larger;
+  top: 13px;
+  left: 15px;
+}
 .post-body .note.default {
+  background-color: #f7f7f7;
   border-left-color: #777;
 }
 .post-body .note.default h2,
@@ -785,7 +797,12 @@ pre .javascript .function {
 .post-body .note.default h6 {
   color: #777;
 }
+.post-body .note.default:not(.no-icon):before {
+  content: "\f0a9";
+  color: #777;
+}
 .post-body .note.primary {
+  background-color: #f5f0fa;
   border-left-color: #6f42c1;
 }
 .post-body .note.primary h2,
@@ -795,7 +812,12 @@ pre .javascript .function {
 .post-body .note.primary h6 {
   color: #6f42c1;
 }
+.post-body .note.primary:not(.no-icon):before {
+  content: "\f055";
+  color: #6f42c1;
+}
 .post-body .note.info {
+  background-color: #eef7fa;
   border-left-color: #428bca;
 }
 .post-body .note.info h2,
@@ -805,7 +827,12 @@ pre .javascript .function {
 .post-body .note.info h6 {
   color: #428bca;
 }
+.post-body .note.info:not(.no-icon):before {
+  content: "\f05a";
+  color: #428bca;
+}
 .post-body .note.success {
+  background-color: #eff8f0;
   border-left-color: #5cb85c;
 }
 .post-body .note.success h2,
@@ -815,7 +842,12 @@ pre .javascript .function {
 .post-body .note.success h6 {
   color: #5cb85c;
 }
+.post-body .note.success:not(.no-icon):before {
+  content: "\f058";
+  color: #5cb85c;
+}
 .post-body .note.warning {
+  background-color: #fdf8ea;
   border-left-color: #f0ad4e;
 }
 .post-body .note.warning h2,
@@ -825,7 +857,12 @@ pre .javascript .function {
 .post-body .note.warning h6 {
   color: #f0ad4e;
 }
+.post-body .note.warning:not(.no-icon):before {
+  content: "\f06a";
+  color: #f0ad4e;
+}
 .post-body .note.danger {
+  background-color: #fcf1f2;
   border-left-color: #d9534f;
 }
 .post-body .note.danger h2,
@@ -833,6 +870,10 @@ pre .javascript .function {
 .post-body .note.danger h4,
 .post-body .note.danger h5,
 .post-body .note.danger h6 {
+  color: #d9534f;
+}
+.post-body .note.danger:not(.no-icon):before {
+  content: "\f056";
   color: #d9534f;
 }
 .post-body .label {
@@ -882,6 +923,9 @@ pre .javascript .function {
   border-top: 3px solid transparent;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
 }
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs li.tab {
@@ -2098,7 +2142,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7714ff;
+  background: #9401ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3261,6 +3305,29 @@ hr {
   border: none;
   margin: 0px;
 }
+.pagination .page-number.current {
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.35);
+}
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  margin-bottom: 10px;
+  border: none;
+}
+.pagination .space {
+  color: #fff;
+}
+.footer {
+  line-height: 1.5;
+  background-color: rgba(255,255,255,0.75);
+  color: #333;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #a166ab;
+  box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.15);
+}
 .posts-expand .post-tags a {
   border-bottom: none;
   margin-right: 0px;
@@ -3274,9 +3341,17 @@ hr {
 .posts-expand .post-tags a:hover {
   background: #eee;
 }
+.post-nav-item a {
+  color: #5073b8;
+  font-weight: bold;
+}
+.post-nav-item a:hover {
+  color: #a166ab;
+  font-weight: bold;
+}
 .comments {
   background-color: #fff;
-  box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
   margin: 80px 0px 40px 0px;
 }
 * {
@@ -3400,9 +3475,9 @@ pre {
   margin-top: 30px;
 }
 .sidebar-nav li {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
-  color: #9932cc;
+  color: #9400d3;
 }
 .sidebar-nav li:hover {
   color: #a166ab;
@@ -3419,31 +3494,31 @@ pre {
   line-height: 1.3;
 }
 .site-author-name {
-  color: #1e90ff;
+  color: #00f;
 }
 .links-of-author {
   margin-top: 15px;
-  font-size: 20px;
+  font-size: 16px;
 }
 .links-of-blogroll-title {
   margin-bottom: 10px;
   margin-top: 10px;
   color: rgba(7,179,155,0.75);
   margin-left: 6px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
 }
 .sidebar a {
   color: #dc143c;
   border-bottom: none;
-  font-size: 16px;
+  font-size: 14px;
 }
 .sidebar a:hover {
-  color: #ee82ee;
+  color: #0ff;
 }
 #days {
   display: block;
-  color: #00bfff;
+  color: #00f;
   font-size: 18px;
   margin-top: 15px;
 }
@@ -3482,7 +3557,7 @@ pre {
 .local-search-popup .local-search-input-wrapper input {
   padding: 7px 0px;
   height: 21px;
-  background-color: #fff;
+  background: transparent;
 }
 .local-search-popup .popup-btn-close {
   border-left: none;
@@ -3507,7 +3582,7 @@ pre {
 }
 .weixin-box {
   position: absolute;
-  bottom: 12px;
+  bottom: 5px;
   right: 94px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
@@ -3537,7 +3612,7 @@ pre {
   opacity: 0;
 }
 .weixin-menu:hover .weixin-hover {
-  bottom: 85px;
+  bottom: 78px;
   left: 0px;
   height: 188px;
   width: 168px;
@@ -3571,16 +3646,12 @@ img.img-topic {
   clear: right;
 }
 .footer {
-  background-color: rgba(255,255,255,0.75);
-  border-top-width: 3px;
-  border-top-style: solid;
-  border-top-color: #a166ab;
-  box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.15);
+  background-color: #fff;
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 98px;
+  height: 50px;
 }
 .footer-inner {
   box-sizing: border-box;
@@ -3595,10 +3666,84 @@ img.img-topic {
 }
 .footer {
   font-size: 14px;
-  color: #999;
+  background: transparent;
 }
 .footer img {
   border: none;
+}
+.posts-collapse {
+  margin: 50px 0px;
+}
+@media (max-width: 1023px) {
+  .posts-collapse {
+    margin: 50px 20px;
+  }
+}
+.posts-collapse::after {
+  margin-left: -2px;
+  background-image: linear-gradient(180deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%);
+}
+.posts-collapse .collection-title::before {
+  background-color: #fff;
+}
+.posts-collapse .post-header:hover::before {
+  background-color: #a166ab;
+}
+.posts-collapse .collection-title h1,
+.posts-collapse .collection-title h2 {
+  color: #fff;
+}
+.posts-collapse .post-title a {
+  color: #5073b8;
+}
+.posts-collapse .post-title a:hover {
+  color: #a166ab;
+}
+.posts-collapse .post-header:hover {
+  border-bottom-color: #a166ab;
+}
+.page-archive .archive-page-counter {
+  color: #fff;
+}
+.page-archive .posts-collapse .archive-move-on {
+  top: 10px;
+  opacity: 1;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.post-block.page {
+  margin-top: 40px;
+}
+.category-all-page {
+  margin: -80px 50px 40px 50px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  background-color: transparent;
+  padding: 86px 36px 36px 36px;
+}
+@media (max-width: 767px) {
+  .category-all-page {
+    margin: -73px 15px 50px 15px;
+  }
+  .category-all-page .category-all-title {
+    margin-top: -5px;
+  }
+}
+.feed-link {
+  margin-top: 15px;
+  margin-left: 7px;
+  background: transparent;
+  background-image: linear-gradient(180deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%);
+}
+.feed-link a {
+  color: #7fff00;
+  border: 1px solid #9e9e9e !important;
+  border-radius: 17px;
+}
+.feed-link a:hover {
+  background-color: #40e0d0;
+}
+.feed-link a i {
+  color: #fdf5e6;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
