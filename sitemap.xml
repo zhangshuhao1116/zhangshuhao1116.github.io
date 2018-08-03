@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.zhangshuhao1116.xyz/photos/index.html</loc>
+    
+    <lastmod>2018-08-03T12:56:25.258Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.zhangshuhao1116.xyz/about/index.html</loc>
     
     <lastmod>2018-08-03T10:17:16.552Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>https://www.zhangshuhao1116.xyz/2018/08/01/hello-world/</loc>
     
     <lastmod>2018-08-01T06:13:22.101Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.zhangshuhao1116.xyz/photos/index.html</loc>
-    
-    <lastmod>2018-08-01T03:46:59.822Z</lastmod>
     
   </url>
   
